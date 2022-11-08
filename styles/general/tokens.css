@@ -1,0 +1,18 @@
+:root {
+  --color-black: #071426;
+  --color-grey: #d9d9d9;
+  --color-green: #1fe6aa;
+
+  --background-color: radial-gradient(
+      circle farthest-corner at 100% 0,
+      #f1dfff,
+      rgb(232 241 244 / 48%) 63%
+    ),
+    radial-gradient(
+      circle farthest-corner at 0 0,
+      #d5ffe9,
+      rgba(232, 241, 244, 0) 51%
+    );
+
+  --box-shadow: 0px 2px 6px 0px rgb(202 202 202 / 55%);
+}
