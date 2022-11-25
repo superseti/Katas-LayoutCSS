@@ -1,17 +1,31 @@
 .layout {
-  
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 5rem 1fr 4rem;
+    grid-template-areas: "header"
+    "view"
+    "menu";
+    overflow: hidden;
 }
 
 .layout__header {
- 
+    padding: 0.1rem 2rem;
+    grid-area: header;
+    overflow: hidden;
 }
 
 .layout__menu {
-
+    padding: 0.1rem 2rem;
+    grid-area: menu;
+    overflow: hidden;
 }
 
 .layout__view {
-
+    padding: 0.1rem 2rem;
+    grid-area: view;
+    overflow-y: auto;
+    background: var(--background-color);
 }
 
 @media only screen and (min-width: 900px) {

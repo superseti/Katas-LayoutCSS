@@ -1,13 +1,30 @@
 .header {
-
+    display: flex;
+    justify-content: space-between;
+    place-items: center;
 }
 
 .header__logo {
-  
+  height: 50%;
 }
 
 .header__avatar {
-  
+  padding: 0.5rem;
+  border-radius: 50%;
+  border: 1px var(--color-black) solid;
+  position: relative;
+}
+
+.header__avatar:after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-color: var(--color-green);
+  border-radius: 50%;
+  left: 3px;
+  top: 3px;
+  z-index: -1;
 }
 
 @media only screen and (min-width: 900px) {
